@@ -1,12 +1,11 @@
-import { Button } from "@/components/ui/button";
+"use client";
 
-export default function Home() {
-  return (
-    <div className="p-4">
-      <p>Hello to dashboard</p>
-      <Button size="default" variant="default">
-        Click mE
-      </Button>
-    </div>
-  );
-}
+import { useStoreModal } from "@/hooks/use-store-modal";
+
+const SetUpPage = () => {
+  const storeModal = useStoreModal();
+
+  return <div className="p-4">root page</div>;
+};
+
+export default SetUpPage;
